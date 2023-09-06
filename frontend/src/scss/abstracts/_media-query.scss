@@ -1,0 +1,17 @@
+$pc: 1600px; // Normal PC screen size
+$tablet-landscape: 1024px; // Tablet Landscape screen size
+$phone: 375px;  // Phone screen size.
+
+
+@mixin responsive($media) {
+  @if $media == tablet-landscape {
+    @media only screen and (min-width: ($tablet-landscape - 1)){
+      @content;
+    }
+  }
+  @else if $media == pc {
+    @media only screen and (min-width: ($pc - 1)) {
+      @content;
+    }
+  }
+}

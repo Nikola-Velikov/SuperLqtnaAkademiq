@@ -1,30 +1,38 @@
+
+@use '../abstracts/media-query';
+
 .hammburger__button {
     border: none;
-    padding: 0px;
+    padding-inline: 20px;
     background-color: transparent;
-  }
-  .hammburger__button .hamburger {
+}
+.hammburger__button .hamburger {
     padding: 0px;
     scale: 100%;
-  }
-  .hammburger__button .hamburger .line {
+}
+.hammburger__button .hamburger .line {
     scale: 100%;
     will-change: transform;
-    fill: rgb(255, 255, 255);
+    fill: black;
     transform-origin: center;
     transition: rotate 200ms ease-in, y 200ms ease-in 200ms, opacity 0ms 200ms;
-  }
-  .hammburger__button .hamburger.active .line {
+}
+.hammburger__button .hamburger.active .line {
     transition: rotate 200ms ease-in 200ms, y 200ms ease-in, opacity 0ms 200ms;
-  }
-  .hammburger__button .hamburger.active .top {
+}
+.hammburger__button .hamburger.active .top {
     y: 45%;
     rotate: 45deg;
+}
+.hammburger__button .hamburger.active .mid {
+  opacity: 0;
+}
+.hammburger__button .hamburger.active .bot {
+  y: 45%;
+  rotate: -45deg;
+}
+@include media-query.responsive(tablet-landscape) {
+  .hammburger__button{
+    display: none;
   }
-  .hammburger__button .hamburger.active .mid {
-    opacity: 0;
-  }
-  .hammburger__button .hamburger.active .bot {
-    y: 45%;
-    rotate: -45deg;
-  }
+}

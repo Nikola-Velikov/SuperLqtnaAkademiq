@@ -1,0 +1,195 @@
+.welcome {
+    // background-image: url('../../assets/amazing-shot-ferchensee-lake-bavaria-germany.jpg');
+    // width: 100vw;
+    // height: 100vh;
+    margin-top: 80px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 80%;
+            border-radius: 15px;
+        }
+    }
+    &__title {
+        z-index: 200;
+        padding-left: 12px;
+        color: white;
+        margin-top: 20px;
+        h1 {
+            font-size: 28px;
+            line-height: 36px;
+            font-weight: 700;
+            color: black;
+        }
+        p{
+            margin-top: 10px;
+            color: rgb(0, 0, 0);
+        }
+        button{
+            margin-top: 20px;
+            background: #D40000;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 14px 28px;
+        }
+    }
+}
+.brands {
+    margin-top: 50px;
+    margin-inline: 12px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding-inline: 20px;
+    gap: 20px;
+    font-size: 30px;
+    background-color: rgb(207, 234, 248);
+    .img {
+        img {
+            object-fit: contain ;
+            height: 100%;
+            display: block;
+            margin: auto;
+            max-width: 100%;
+        }
+    }
+}
+.about-us{
+    margin-top: 60px;
+    padding-inline: 12px;
+    
+    &__item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        column-gap: 12px;
+        margin-bottom: 40px;
+        svg {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        .number{
+            font-size: 36px;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .text {
+            font-size: 14px;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+    }
+}
+.events {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    .title {
+        text-align: center;
+        font-size: 42px;
+        position: relative;
+        // background-color: red;
+        // border: 1px solid red;
+        // z-index: 1000;
+        // &:after {
+        //     content: '';
+        //     width: 100%;
+        //     border-bottom: solid 3px #000000;
+        //     position: absolute;
+        //     left: 0;
+        //     top: 50%;
+        //     z-index: 1;
+        // }
+    }
+    &__event {
+        // background: url('../../assets/course_image.jpg');
+        background-color: rgb(107, 107, 107);
+        object-fit: cover;
+        position: relative;
+        height: 408px;
+        margin: 20px;
+        padding-inline: 20px;
+        .date {
+            position: absolute;
+            top: 16px;
+            right: 32px;
+            color: #E3E74C;
+            font-size: 29px;
+        }
+        .text {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            bottom: 0;
+            // padding-inline: 18px;
+            padding-bottom: 32px;
+            color: white;
+            button {
+                
+                padding-inline: 20px;
+                // margin-left: 15px;
+                border-radius: 30px;
+                background-color: transparent;
+                border: 3px solid white;
+                color: white;
+            }
+        }
+    }
+}
+.slider-wrapper {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+  .slide {
+    background-color: #43B9B2;;
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    position: relative;
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: end;
+    img {
+        position: absolute;
+        top: 22px;
+        left: -32px;
+    }
+    q {
+        padding-left: 98px;
+        margin-bottom: 60px;
+        width: 20ch;
+    }
+    p {
+        padding-left: 98px;
+        margin-bottom: 20px;
+    }
+}
+.courses {
+    .title{
+        text-align: center;
+        font-size: 42px;
+        position: relative;
+    }
+}
